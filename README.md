@@ -3,4 +3,4 @@ Sample of a .NET application to import GitHub repos using Coravel
 
 ## Running It
 
-Navigate to ./Web and run `dotnet ef database update` then `dotnet run`!
+Navigate to _./Web_ and run `dotnet ef database update` then `dotnet run`!
