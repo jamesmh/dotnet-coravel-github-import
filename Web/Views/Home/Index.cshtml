@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Web.Models.GitHubRepositoryViewModel>
+
+<div class="text-center">
+    <h1 class="display-4">Your Repositories!</h1>
+
+    <ul class="list-group">
+        @foreach (var repo in Model)
+        {
+            <li class="list-group-item">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">@repo.Path</h5>
+                        <p class="card-text">@repo.Description</p>
+                        <p class="card-text">@repo.Stars stars</p>
+                        <p class="card-text">@repo.LastUpdated</p>
+                        <a href="https://github.com/@repo.Path" class="card-link">Link</a>
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
