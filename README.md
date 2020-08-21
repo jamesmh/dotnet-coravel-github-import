@@ -3,4 +3,6 @@ Sample of a .NET application to import GitHub repos using Coravel
 
 ## Running It
 
-Navigate to _./Web_ and run `dotnet ef database update` then `dotnet run`!
+Under `./Web/Startup.cs` in the `ConfigureServices` method change the GitHub user from my own to yours (or someone else if you want!).
+
+Then, under _./Web_, run `dotnet ef database update` then `dotnet run`!
